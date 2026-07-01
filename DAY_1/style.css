@@ -410,92 +410,78 @@ button{
 /* ===========================
    MOBILE
 =========================== */
-
 @media (max-width:768px){
 
 .infrastructure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
-    flex-direction:column;
+    height: auto;
+    padding: 0 25px 70px;
 
-    justify-content:center;
-
-    text-align:center;
-
-    height:auto;
-
-    padding:150px 30px 70px;
-
-    overflow:hidden;
+    text-align: center;
+    overflow: hidden;
 }
 
+/* Background circles */
 .infrastructure::before{
-
-    width:650px;
-    height:650px;
-
-    left:50%;
-    top:-250px;
-
-    transform:translateX(-50%);
+    width: 600px;
+    height: 600px;
+    left: 50%;
+    top: -250px;
+    transform: translateX(-50%);
 }
 
+/* Phone container */
 .phone-image{
-
-    width:100%;
-    height:260px;
-
-    margin-bottom:35px;
+    position: relative;
+    width: 100%;
+    height: 460px;      /* Enough height for both phones */
+    margin-bottom: 30px;
+    flex: none;
 }
 
-/* Left Phone */
-
+/* Left phone */
 .phone-left{
-
-    width:165px;
-
-    left:50%;
-
-    top:-60px;
-
-    transform:translateX(-95%);
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-95%);
+    z-index: 2;
 }
 
-/* Right Phone */
-
+/* Right phone */
 .phone-right{
-
-    width:150px;
-
-    left:50%;
-
-    top:-5px;
-
-    transform:translateX(5%);
+    position: absolute;
+    width: 165px;
+    left: 50%;
+    top: 100px;
+    transform: translateX(5%);
+    z-index: 3;
 }
 
+/* Text */
 .infra-text{
-
-    padding-left:0;
+    flex: none;
+    width: 100%;
+    padding: 0;
 }
 
 .infra-text h2{
-
-    font-size:30px;
-
-    margin-bottom:20px;
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 20px;
 }
 
 .infra-text p{
-
-    max-width:100%;
-
-    font-size:16px;
-
-    line-height:1.8;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 100%;
 }
-
 }
-
 /* ===========================
    LAPTOP SECTION
 =========================== */
@@ -723,30 +709,12 @@ footer{
     font-size:26px;
 }
 
-.infrastructure{
-    flex-direction:column;
-    text-align:center;
-    padding:120px 30px 60px;
-}
-
 .infrastructure::before{
     width:600px;
     height:600px;
     left:50%;
     top:-260px;
     transform:translateX(-50%);
-}
-
-.phone-image{
-    display:flex;
-    justify-content:center;
-}
-
-.phone-image img{
-    max-width:340px;
-    width:100%;
-    position:relative;
-    top:-120px;
 }
 
 .infra-text h2{
