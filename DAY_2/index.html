@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <link rel="icon" href="OIP.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <!-- Top Bar -->
+
+        <div class="top-bar">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search Student..."
+            >
+
+            <div class="top-buttons">
+
+                <select id="filterDepartment">
+
+                    <option value="All">All Departments</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="IT">IT</option>
+
+                </select>
+
+                <button id="sortBtn">
+                    Sort A-Z
+                </button>
+
+                <button id="openAddModal">
+                    + Add Student
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="stats">
+
+            <p>
+                Total Students :
+                <span id="totalStudents">0</span>
+            </p>
+
+            <p>
+                Average Age :
+                <span id="averageAge">0</span>
+            </p>
+
+        </div>
+
+        <!-- Student Table -->
+
+        <div class="table-box">
+
+            <table class="student-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Department</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="studentTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         Add Student Modal
+    ========================== -->
+
+    <div id="addModal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="closeAddModal">&times;</span>
+
+            <h2>Add Student</h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Student Name"
+            >
+
+            <input
+                type="number"
+                id="age"
+                placeholder="Age"
+            >
+
+            <select id="department">
+
+                <option value="">
+                    Select Department
+                </option>
+
+                <option value="CSE">
+                    CSE
+                </option>
+
+                <option value="ECE">
+                    ECE
+                </option>
+
+                <option value="EEE">
+                    EEE
+                </option>
+
+                <option value="IT">
+                    IT
+                </option>
+
+            </select>
+
+            <div class="confirm-buttons">
+
+                <button id="saveBtn">
+                    Add Student
+                </button>
+
+                <button id="cancelAddBtn">
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         Student Details Modal
+    ========================== -->
+
+    <div id="detailsModal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="closeModal">&times;</span>
+
+            <h2>Student Details</h2>
+
+            <div id="detailsText"></div>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         Action Modal
+    ========================== -->
+
+    <div id="actionModal" class="modal">
+
+        <div class="modal-content action-modal">
+
+            <span id="closeActionModal">&times;</span>
+
+            <h2>Student Actions</h2>
+
+            <button id="editBtn">
+                Edit Student
+            </button>
+
+            <button id="deleteBtn">
+                Delete Student
+            </button>
+
+            <button id="viewBtn">
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
