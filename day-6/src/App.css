@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background: #f5f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #1677ff, #4096ff);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.app-content {
+  padding: 40px 20px;
+}
+
+.form-card,
+.table-card {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.ant-card-head-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ant-table {
+  border-radius: 8px;
+}
+
+.ant-btn {
+  border-radius: 6px;
+}
+
+.ant-input,
+.ant-select-selector {
+  border-radius: 6px !important;
+}
+
+.ant-card {
+  margin-bottom: 30px;
+}
