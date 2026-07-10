@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "name": "sam ",
+      "email": "samrocz2005@gmail.com",
+      "id": "oGXcD7WUwLI"
+    }
+  ],
+  "weatherHistory": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
