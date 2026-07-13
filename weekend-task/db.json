@@ -1,0 +1,196 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Sam",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    }
+  ],
+
+  "boards": [
+    {
+      "id": "board-1",
+      "name": "Platform Launch",
+      "columns": [
+        {
+          "id": "todo",
+          "name": "Todo",
+          "color": "#49C4E5",
+          "tasks": [
+            {
+              "id": "task-1",
+              "title": "Build UI for onboarding flow",
+              "description": "Create responsive onboarding screens using React and Ant Design.",
+              "status": "todo",
+              "subtasks": [
+                {
+                  "id": "sub-1",
+                  "title": "Create Login Screen",
+                  "done": true
+                },
+                {
+                  "id": "sub-2",
+                  "title": "Create Dashboard Layout",
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "task-2",
+              "title": "Build Authentication",
+              "description": "Implement protected routes.",
+              "status": "todo",
+              "subtasks": [
+                {
+                  "id": "sub-3",
+                  "title": "Login Page",
+                  "done": true
+                },
+                {
+                  "id": "sub-4",
+                  "title": "Protected Route",
+                  "done": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "doing",
+          "name": "Doing",
+          "color": "#8471F2",
+          "tasks": [
+            {
+              "id": "task-3",
+              "title": "Create Redux Store",
+              "description": "Configure Redux Toolkit store.",
+              "status": "doing",
+              "subtasks": [
+                {
+                  "id": "sub-5",
+                  "title": "Board Slice",
+                  "done": true
+                },
+                {
+                  "id": "sub-6",
+                  "title": "Task Slice",
+                  "done": false
+                }
+              ]
+            },
+            {
+              "id": "task-4",
+              "title": "Implement Zustand",
+              "description": "Store UI state in Zustand.",
+              "status": "doing",
+              "subtasks": [
+                {
+                  "id": "sub-7",
+                  "title": "Theme Store",
+                  "done": true
+                },
+                {
+                  "id": "sub-8",
+                  "title": "Sidebar Store",
+                  "done": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "done",
+          "name": "Done",
+          "color": "#67E2AE",
+          "tasks": [
+            {
+              "id": "task-5",
+              "title": "Project Setup",
+              "description": "Create React App and install dependencies.",
+              "status": "done",
+              "subtasks": [
+                {
+                  "id": "sub-9",
+                  "title": "CRA",
+                  "done": true
+                },
+                {
+                  "id": "sub-10",
+                  "title": "Ant Design",
+                  "done": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "board-2",
+      "name": "Marketing Plan",
+      "columns": [
+        {
+          "id": "todo",
+          "name": "Todo",
+          "color": "#49C4E5",
+          "tasks": [
+            {
+              "id": "task-6",
+              "title": "Social Media Campaign",
+              "description": "Prepare Instagram posts.",
+              "status": "todo",
+              "subtasks": [
+                {
+                  "id": "sub-11",
+                  "title": "Design Banner",
+                  "done": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "doing",
+          "name": "Doing",
+          "color": "#8471F2",
+          "tasks": []
+        },
+        {
+          "id": "done",
+          "name": "Done",
+          "color": "#67E2AE",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "board-3",
+      "name": "Roadmap",
+      "columns": [
+        {
+          "id": "todo",
+          "name": "Todo",
+          "color": "#49C4E5",
+          "tasks": []
+        },
+        {
+          "id": "doing",
+          "name": "Doing",
+          "color": "#8471F2",
+          "tasks": []
+        },
+        {
+          "id": "done",
+          "name": "Done",
+          "color": "#67E2AE",
+          "tasks": []
+        }
+      ]
+    }
+  ],
+
+  "settings": {
+    "theme": "dark"
+  }
+}

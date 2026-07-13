@@ -1,0 +1,390 @@
+/* ================================
+   Google Font
+================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap");
+
+/* ================================
+   Reset
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: #20212c;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* ================================
+   Scrollbar
+================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #20212c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #635fc7;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7a74ff;
+}
+
+/* ================================
+   Links
+================================ */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================================
+   Buttons
+================================ */
+
+button {
+  font-family: inherit;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* ================================
+   Ant Layout
+================================ */
+
+.ant-layout {
+  background: #20212c !important;
+}
+
+.ant-layout-header {
+  background: #2b2c37 !important;
+}
+
+.ant-layout-sider {
+  background: #2b2c37 !important;
+}
+
+.ant-layout-content {
+  background: #20212c !important;
+}
+
+/* ================================
+   Cards
+================================ */
+
+.ant-card {
+  background: #2b2c37 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.ant-card:hover {
+  transform: translateY(-4px);
+}
+
+.ant-card:hover .ant-typography {
+  color: #635fc7 !important;
+}
+
+/* ================================
+   Modal
+================================ */
+
+.ant-modal-content {
+  background: #2b2c37 !important;
+  border-radius: 10px !important;
+}
+
+.ant-modal-header {
+  background: transparent !important;
+}
+
+.ant-modal-title {
+  color: #ffffff !important;
+}
+
+.ant-modal-close {
+  color: #ffffff !important;
+}
+
+/* ================================
+   Typography
+================================ */
+
+.ant-typography {
+  color: #ffffff;
+}
+
+/* ================================
+   Input
+================================ */
+
+.ant-input,
+.ant-input-password,
+.ant-input-affix-wrapper,
+.ant-input-textarea textarea {
+  background: #20212c !important;
+  color: #ffffff !important;
+  border: 1px solid #3e3f4e !important;
+}
+
+.ant-input::placeholder,
+textarea::placeholder {
+  color: #828fa3 !important;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper-focused,
+.ant-input:hover {
+  border-color: #635fc7 !important;
+}
+
+/* ================================
+   Select
+================================ */
+
+.ant-select-selector {
+  background: #20212c !important;
+  color: #ffffff !important;
+  border: 1px solid #3e3f4e !important;
+}
+
+.ant-select-selection-item {
+  color: #ffffff !important;
+}
+
+/* ================================
+   Dropdown
+================================ */
+
+.ant-dropdown-menu {
+  background: #2b2c37 !important;
+}
+
+.ant-dropdown-menu-title-content {
+  color: #ffffff;
+}
+
+/* ================================
+   Menu
+================================ */
+
+.ant-menu {
+  background: #2b2c37 !important;
+  border: none !important;
+}
+
+.ant-menu-item {
+  color: #828fa3 !important;
+  border-radius: 0 24px 24px 0 !important;
+  margin-right: 16px !important;
+}
+
+.ant-menu-item-selected {
+  background: #635fc7 !important;
+  color: #ffffff !important;
+}
+
+.ant-menu-item:hover {
+  color: #ffffff !important;
+}
+
+/* ================================
+   Checkbox
+================================ */
+
+.ant-checkbox-wrapper {
+  color: #ffffff !important;
+}
+
+/* ================================
+   Drawer
+================================ */
+
+.ant-drawer-content {
+  background: #2b2c37 !important;
+}
+
+.ant-drawer-header {
+  display: none;
+}
+
+/* ================================
+   Buttons
+================================ */
+
+.ant-btn-primary {
+  background: #635fc7 !important;
+  border-color: #635fc7 !important;
+}
+
+.ant-btn-primary:hover {
+  background: #7a74ff !important;
+  border-color: #7a74ff !important;
+}
+
+/* ================================
+   Empty
+================================ */
+
+.ant-empty-description {
+  color: #828fa3 !important;
+}
+
+/* ================================
+   Utility Classes
+================================ */
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 992px) {
+  body {
+    overflow: auto;
+  }
+
+  .ant-layout-header {
+    padding: 0 16px !important;
+  }
+
+  .ant-card {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ant-modal {
+    max-width: calc(100vw - 32px) !important;
+  }
+
+  .ant-btn {
+    font-size: 14px;
+  }
+}
+.ant-modal-content {
+  border-radius: 8px !important;
+}
+
+.ant-select-selector {
+  border-radius: 8px !important;
+  min-height: 40px !important;
+}
+
+.ant-select-selection-item {
+  line-height: 38px !important;
+  font-size: 13px;
+}
+
+.ant-dropdown {
+  border-radius: 8px;
+}
+
+.ant-dropdown-menu {
+  border-radius: 8px !important;
+  padding: 8px 0 !important;
+}
+
+.ant-dropdown-menu-item {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.ant-checkbox-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ant-checkbox {
+  margin-right: 12px;
+}
+
+.ant-checkbox-inner {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background: #635fc7;
+  border-color: #635fc7;
+}
+
+.ant-checkbox-wrapper:hover {
+  color: inherit;
+}
