@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "name": "sam D",
+      "email": "samrocz2005@gmail.com",
+      "department": "CSE",
+      "age": 21,
+      "id": 1783938875859
+    },
+    {
+      "name": "sam",
+      "email": "samrocz@gmail.com",
+      "department": "CSE",
+      "age": 18,
+      "id": 1783942855340
+    },
+    {
+      "name": "sooriya",
+      "email": "sooriya@zybsis.com",
+      "department": "IT",
+      "age": 24,
+      "id": 1783943000146
+    },
+    {
+      "name": "kamal",
+      "email": "kamal@zybsis.com",
+      "department": "EEE",
+      "age": 24,
+      "id": 1783943037991
+    }
+  ]
+}
