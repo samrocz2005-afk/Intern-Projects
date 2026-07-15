@@ -1,0 +1,396 @@
+{
+  "students": [
+    {
+      "id": 2,
+      "firstName": "Michael",
+      "lastName": "Williams",
+      "email": "michael.williams@x.dummyjson.com",
+      "phone": "+49 258-627-6644",
+      "age": 36,
+      "gender": "male",
+      "university": "Ohio State University"
+    },
+    {
+      "id": 3,
+      "firstName": "Sophia",
+      "lastName": "Brown",
+      "email": "sophia.brown@x.dummyjson.com",
+      "phone": "+81 210-652-2785",
+      "age": 43,
+      "gender": "female",
+      "university": "Pepperdine University"
+    },
+    {
+      "id": 4,
+      "firstName": "James",
+      "lastName": "Davis",
+      "email": "james.davis@x.dummyjson.com",
+      "phone": "+49 614-958-9364",
+      "age": 46,
+      "gender": "male",
+      "university": "University of Southern California"
+    },
+    {
+      "id": 5,
+      "firstName": "Emma",
+      "lastName": "Miller",
+      "email": "emma.miller@x.dummyjson.com",
+      "phone": "+91 759-776-1614",
+      "age": 31,
+      "gender": "female",
+      "university": "Northeastern University"
+    },
+    {
+      "id": 6,
+      "firstName": "Olivia",
+      "lastName": "Wilson",
+      "email": "olivia.wilson@x.dummyjson.com",
+      "phone": "+91 607-295-6448",
+      "age": 23,
+      "gender": "female",
+      "university": "University of North Carolina--Chapel Hill"
+    },
+    {
+      "id": 7,
+      "firstName": "Alexander",
+      "lastName": "Jones",
+      "email": "alexander.jones@x.dummyjson.com",
+      "phone": "+61 260-824-4986",
+      "age": 39,
+      "gender": "male",
+      "university": "University of Illinois--Urbana-Champaign"
+    },
+    {
+      "id": 8,
+      "firstName": "Ava",
+      "lastName": "Taylor",
+      "email": "ava.taylor@x.dummyjson.com",
+      "phone": "+1 458-853-7877",
+      "age": 28,
+      "gender": "female",
+      "university": "University of Wisconsin--Madison"
+    },
+    {
+      "id": 9,
+      "firstName": "Ethan",
+      "lastName": "Martinez",
+      "email": "ethan.martinez@x.dummyjson.com",
+      "phone": "+92 933-608-5081",
+      "age": 34,
+      "gender": "male",
+      "university": "Syracuse University"
+    },
+    {
+      "id": 10,
+      "firstName": "Isabella",
+      "lastName": "Anderson",
+      "email": "isabella.anderson@x.dummyjson.com",
+      "phone": "+49 770-658-4885",
+      "age": 32,
+      "gender": "female",
+      "university": "California Institute of Technology (Caltech)"
+    },
+    {
+      "id": 11,
+      "firstName": "Liam",
+      "lastName": "Garcia",
+      "email": "liam.garcia@x.dummyjson.com",
+      "phone": "+92 870-217-6201",
+      "age": 30,
+      "gender": "male",
+      "university": "Ohio State University"
+    },
+    {
+      "id": 12,
+      "firstName": "Mia",
+      "lastName": "Rodriguez",
+      "email": "mia.rodriguez@x.dummyjson.com",
+      "phone": "+49 989-461-8403",
+      "age": 25,
+      "gender": "female",
+      "university": "William & Mary"
+    },
+    {
+      "id": 13,
+      "firstName": "Noah",
+      "lastName": "Hernandez",
+      "email": "noah.hernandez@x.dummyjson.com",
+      "phone": "+49 393-605-6968",
+      "age": 41,
+      "gender": "male",
+      "university": "New York University (NYU)"
+    },
+    {
+      "id": 14,
+      "firstName": "Charlotte",
+      "lastName": "Lopez",
+      "email": "charlotte.lopez@x.dummyjson.com",
+      "phone": "+44 373-953-5028",
+      "age": 37,
+      "gender": "female",
+      "university": "Northeastern University"
+    },
+    {
+      "id": 15,
+      "firstName": "William",
+      "lastName": "Gonzalez",
+      "email": "william.gonzalez@x.dummyjson.com",
+      "phone": "+81 905-252-7319",
+      "age": 33,
+      "gender": "male",
+      "university": "Tufts University"
+    },
+    {
+      "id": 16,
+      "firstName": "Avery",
+      "lastName": "Perez",
+      "email": "avery.perez@x.dummyjson.com",
+      "phone": "+61 731-431-3457",
+      "age": 26,
+      "gender": "female",
+      "university": "Harvard University"
+    },
+    {
+      "id": 17,
+      "firstName": "Evelyn",
+      "lastName": "Sanchez",
+      "email": "evelyn.sanchez@x.dummyjson.com",
+      "phone": "+1 623-880-6871",
+      "age": 38,
+      "gender": "female",
+      "university": "Washington University in St. Louis"
+    },
+    {
+      "id": 18,
+      "firstName": "Logan",
+      "lastName": "Torres",
+      "email": "logan.torres@x.dummyjson.com",
+      "phone": "+81 507-434-8733",
+      "age": 32,
+      "gender": "male",
+      "university": "University of Illinois--Urbana-Champaign"
+    },
+    {
+      "id": 19,
+      "firstName": "Abigail",
+      "lastName": "Rivera",
+      "email": "abigail.rivera@x.dummyjson.com",
+      "phone": "+91 228-363-7806",
+      "age": 29,
+      "gender": "female",
+      "university": "California Institute of Technology (Caltech)"
+    },
+    {
+      "id": 20,
+      "firstName": "Jackson",
+      "lastName": "Evans",
+      "email": "jackson.evans@x.dummyjson.com",
+      "phone": "+44 468-628-6686",
+      "age": 35,
+      "gender": "male",
+      "university": "Ohio State University"
+    },
+    {
+      "id": 21,
+      "firstName": "Madison",
+      "lastName": "Collins",
+      "email": "madison.collins@x.dummyjson.com",
+      "phone": "+81 259-957-5711",
+      "age": 27,
+      "gender": "female",
+      "university": "University of Pennsylvania"
+    },
+    {
+      "id": 23,
+      "firstName": "Chloe",
+      "lastName": "Morales",
+      "email": "chloe.morales@x.dummyjson.com",
+      "phone": "+92 468-541-7133",
+      "age": 40,
+      "gender": "female",
+      "university": "Syracuse University"
+    },
+    {
+      "id": 24,
+      "firstName": "Mateo",
+      "lastName": "Nguyen",
+      "email": "mateo.nguyen@x.dummyjson.com",
+      "phone": "+1 341-597-6694",
+      "age": 31,
+      "gender": "male",
+      "university": "Columbia University"
+    },
+    {
+      "id": 25,
+      "firstName": "Harper",
+      "lastName": "Kelly",
+      "email": "harper.kelly@x.dummyjson.com",
+      "phone": "+92 518-863-2863",
+      "age": 28,
+      "gender": "female",
+      "university": "Boston College"
+    },
+    {
+      "id": 26,
+      "firstName": "Evelyn",
+      "lastName": "Gonzalez",
+      "email": "evelyn.gonzalez@x.dummyjson.com",
+      "phone": "+61 708-508-4638",
+      "age": 36,
+      "gender": "female",
+      "university": "Washington University in St. Louis"
+    },
+    {
+      "id": 27,
+      "firstName": "Daniel",
+      "lastName": "Cook",
+      "email": "daniel.cook@x.dummyjson.com",
+      "phone": "+44 254-761-6843",
+      "age": 42,
+      "gender": "male",
+      "university": "Columbia University"
+    },
+    {
+      "id": 28,
+      "firstName": "Lily",
+      "lastName": "Lee",
+      "email": "lily.lee@x.dummyjson.com",
+      "phone": "+1 808-757-9867",
+      "age": 30,
+      "gender": "female",
+      "university": "Johns Hopkins University"
+    },
+    {
+      "id": 29,
+      "firstName": "Henry",
+      "lastName": "Hill",
+      "email": "henry.hill@x.dummyjson.com",
+      "phone": "+1 240-833-4680",
+      "age": 39,
+      "gender": "male",
+      "university": "University of Illinois--Urbana-Champaign"
+    },
+    {
+      "id": 30,
+      "firstName": "Addison",
+      "lastName": "Wright",
+      "email": "addison.wright@x.dummyjson.com",
+      "phone": "+1 514-384-3300",
+      "age": 33,
+      "gender": "female",
+      "university": "Syracuse University"
+    },
+    {
+      "id": 1784032387699,
+      "firstName": "sam ",
+      "lastName": "D",
+      "email": "samrocz2005@gmail.com",
+      "age": 21,
+      "gender": "male",
+      "phone": "+81 965-431-3024",
+      "university": "University of Wisconsin--Madison"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "imdbID": "tt0372784",
+      "title": "Batman Begins",
+      "author": "Christopher Nolan",
+      "year": "2005",
+      "price": 500,
+      "stock": 21,
+      "image": "https://m.media-amazon.com/images/M/MV5BMzA2NDQzZDEtNDU5Ni00YTlkLTg2OWEtYmQwM2Y1YTBjMjFjXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+    },
+    {
+      "id": 2,
+      "imdbID": "tt1877830",
+      "title": "The Batman",
+      "author": "Matt Reeves",
+      "year": "2022",
+      "price": 500,
+      "stock": 20,
+      "image": "https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+    },
+    {
+      "id": 3,
+      "imdbID": "tt2975590",
+      "title": "Batman v Superman: Dawn of Justice",
+      "author": "Zack Snyder",
+      "year": "2016",
+      "price": 500,
+      "stock": 20,
+      "image": "https://m.media-amazon.com/images/M/MV5BZTJkYjdmYjYtOGMyNC00ZGU1LThkY2ItYTc1OTVlMmE2YWY1XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg"
+    },
+    {
+      "id": 4,
+      "imdbID": "tt0096895",
+      "title": "Batman",
+      "author": "Tim Burton",
+      "year": "1989",
+      "price": 500,
+      "stock": 20,
+      "image": "https://m.media-amazon.com/images/M/MV5BYzZmZWViM2EtNzhlMi00NzBlLWE0MWEtZDFjMjk3YjIyNTBhXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "id": 5,
+      "imdbID": "tt0103776",
+      "title": "Batman Returns",
+      "author": "Tim Burton",
+      "year": "1992",
+      "price": 500,
+      "stock": 20,
+      "image": "https://m.media-amazon.com/images/M/MV5BZTliMDVkYTktZDdlMS00NTAwLWJhNzYtMWIwMDZjN2ViMGFiXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "id": 6,
+      "imdbID": "tt0118688",
+      "title": "Batman & Robin",
+      "author": "Joel Schumacher",
+      "year": "1997",
+      "price": 500,
+      "stock": 20,
+      "image": "https://m.media-amazon.com/images/M/MV5BYzU3ZjE3M2UtM2E4Ni00MDI5LTkyZGUtOTFkMGIyYjNjZGU3XkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "id": 7,
+      "imdbID": "tt0112462",
+      "title": "Batman Forever",
+      "author": "Joel Schumacher",
+      "year": "1995",
+      "price": 500,
+      "stock": 20,
+      "image": "https://m.media-amazon.com/images/M/MV5BMTUyNjJhZWItMTZkNS00NDc4LTllNjUtYTg3NjczMzA5ZTViXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "id": 8,
+      "imdbID": "tt4116284",
+      "title": "The Lego Batman Movie",
+      "author": "Chris McKay",
+      "year": "2017",
+      "price": 500,
+      "stock": 20,
+      "image": "https://m.media-amazon.com/images/M/MV5BMTcyNTEyOTY0M15BMl5BanBnXkFtZTgwOTAyNzU3MDI@._V1_SX300.jpg"
+    },
+    {
+      "id": 9,
+      "imdbID": "tt0103359",
+      "title": "Batman: The Animated Series",
+      "author": "N/A",
+      "year": "1992–1995",
+      "price": 500,
+      "stock": 20,
+      "image": "https://m.media-amazon.com/images/M/MV5BYjgwZWUzMzUtYTFkNi00MzM0LWFkMWUtMDViMjMxNGIxNDUxXkEyXkFqcGc@._V1_SX300.jpg"
+    },
+    {
+      "id": 10,
+      "imdbID": "tt18689424",
+      "title": "Batman v Superman: Dawn of Justice (Ultimate Edition)",
+      "author": "Zack Snyder",
+      "year": "2016",
+      "price": 500,
+      "stock": 20,
+      "image": "https://m.media-amazon.com/images/M/MV5BOTRlNWQwM2ItNjkyZC00MGI3LThkYjktZmE5N2FlMzcyNTIyXkEyXkFqcGdeQXVyMTEyNzgwMDUw._V1_SX300.jpg"
+    }
+  ]
+}
