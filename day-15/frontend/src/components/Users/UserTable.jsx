@@ -147,10 +147,6 @@ const UserTable = ({
 
           >
 
-            <Option value={ROLES.ADMIN}>
-              Admin
-            </Option>
-
 
             <Option value={ROLES.MEMBER}>
               Member
