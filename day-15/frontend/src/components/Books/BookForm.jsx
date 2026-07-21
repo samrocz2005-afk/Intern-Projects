@@ -1,13 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  Form,
-  Input,
-  Button,
-  InputNumber,
-} from "antd";
-
-const { TextArea } = Input;
-const currentYear = new Date().getFullYear();
+import { Form, Input, Button, InputNumber } from "antd";
 
 const BookForm = ({
   initialValues = null,
@@ -25,14 +17,12 @@ const BookForm = ({
   }, [initialValues, form]);
 
   const handleFinish = (values) => {
-    onSubmit({
+    const bookData = {
       ...values,
-      title: values.title.trim(),
-      author: values.author.trim(),
-      category: values.category.trim(),
-      description: values.description.trim(),
       publishedYear: Number(values.publishedYear),
-    });
+    };
+
+    onSubmit(bookData);
   };
 
   return (
@@ -40,38 +30,21 @@ const BookForm = ({
       form={form}
       layout="vertical"
       onFinish={handleFinish}
-      validateTrigger={["onChange", "onBlur"]}
     >
       {/* Title */}
       <Form.Item
-        label="Book Title"
+        label="Title"
         name="title"
         rules={[
           {
             required: true,
-            whitespace: true,
-            message: "Please enter the book title.",
-          },
-          {
-            min: 2,
-            message: "Title should be at least 2 characters.",
-          },
-          {
-            max: 100,
-            message: "Title cannot exceed 100 characters.",
-          },
-          {
-            pattern: /[A-Za-z]/,
-            message:
-              "Title should contain at least one letter.",
+            message: "Please enter book title",
           },
         ]}
       >
-        <Input
-          maxLength={100}
-          placeholder="e.g. Atomic Habits"
-        />
+        <Input placeholder="Enter book title" />
       </Form.Item>
+
 
       {/* Author */}
       <Form.Item
@@ -80,29 +53,13 @@ const BookForm = ({
         rules={[
           {
             required: true,
-            whitespace: true,
-            message: "Please enter the author's name.",
-          },
-          {
-            min: 2,
-            message: "Author name is too short.",
-          },
-          {
-            max: 50,
-            message: "Author name cannot exceed 50 characters.",
-          },
-          {
-            pattern: /^[A-Za-z\s.'-]+$/,
-            message:
-              "Use only letters, spaces, apostrophes (') and hyphens (-).",
+            message: "Please enter author name",
           },
         ]}
       >
-        <Input
-          maxLength={50}
-          placeholder="e.g. James Clear"
-        />
+        <Input placeholder="Enter author name" />
       </Form.Item>
+
 
       {/* Category */}
       <Form.Item
@@ -111,24 +68,13 @@ const BookForm = ({
         rules={[
           {
             required: true,
-            whitespace: true,
-            message: "Please enter a category.",
-          },
-          {
-            min: 2,
-            message: "Category is too short.",
-          },
-          {
-            max: 50,
-            message: "Category cannot exceed 50 characters.",
+            message: "Please enter category",
           },
         ]}
       >
-        <Input
-          maxLength={50}
-          placeholder="e.g. Self Help"
-        />
+        <Input placeholder="Programming, Novel..." />
       </Form.Item>
+
 
       {/* Published Year */}
       <Form.Item
@@ -137,52 +83,38 @@ const BookForm = ({
         rules={[
           {
             required: true,
-            message: "Please enter the published year.",
+            message: "Please enter published year",
           },
           {
             type: "number",
             min: 1000,
-            max: currentYear,
-            message: `Enter a year between 1000 and ${currentYear}.`,
+            max: new Date().getFullYear(),
+            message: "Enter a valid published year",
           },
         ]}
       >
         <InputNumber
-          style={{ width: "100%" }}
-          placeholder="e.g. 2024"
+          style={{
+            width: "100%",
+          }}
+          placeholder="Example: 2024"
         />
       </Form.Item>
+
 
       {/* Description */}
       <Form.Item
         label="Description"
         name="description"
-        rules={[
-          {
-            required: true,
-            whitespace: true,
-            message: "Please add a short description.",
-          },
-          {
-            min: 20,
-            message:
-              "Description should be at least 20 characters.",
-          },
-          {
-            max: 500,
-            message:
-              "Description cannot exceed 500 characters.",
-          },
-        ]}
       >
-        <TextArea
+        <Input.TextArea
           rows={4}
-          maxLength={500}
-          showCount
-          placeholder="Briefly describe the book..."
+          placeholder="Enter description"
         />
       </Form.Item>
 
+
+      {/* Submit */}
       <Form.Item>
         <Button
           type="primary"
@@ -193,6 +125,7 @@ const BookForm = ({
           {initialValues ? "Update Book" : "Create Book"}
         </Button>
       </Form.Item>
+
     </Form>
   );
 };

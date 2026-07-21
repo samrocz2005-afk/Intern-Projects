@@ -1,47 +1,30 @@
 import User from "../models/User.js";
-import { ROLES } from "../utils/constants.js";
 
-// ===============================
-// Get All Users (Exclude Admin)
-// ===============================
 const getAllUsers = async () => {
-  return await User.find({
-    role: { $ne: ROLES.ADMIN },
-  }).select("-password");
+  return await User.find().select("-password -refreshToken");
 };
 
-// ===============================
-// Update User Role
-// ===============================
 const updateUserRole = async (userId, role) => {
-  // Only MEMBER and READER are allowed
-  const allowedRoles = [
-    ROLES.MEMBER,
-    ROLES.READER,
-  ];
+  const allowedRoles = ["Admin", "Member", "Reader"];
 
   if (!allowedRoles.includes(role)) {
-    throw new Error(
-      "Invalid role. Only MEMBER and READER are allowed."
-    );
+    throw new Error("Invalid role");
   }
 
-  const user = await User.findById(userId);
+  const user = await User.findByIdAndUpdate(
+    userId,
+    { role },
+    {
+      new: true,
+      runValidators: true,
+    }
+  ).select("-password -refreshToken");
 
   if (!user) {
     throw new Error("User not found");
   }
 
-  // Prevent updating Admin account
-  if (user.role === ROLES.ADMIN) {
-    throw new Error("Admin role cannot be changed.");
-  }
-
-  user.role = role;
-
-  await user.save();
-
-  return await User.findById(userId).select("-password");
+  return user;
 };
 
 export default {
