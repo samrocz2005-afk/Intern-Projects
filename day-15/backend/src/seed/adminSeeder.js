@@ -1,5 +1,6 @@
 import User from "../models/User.js";
 import { hashPassword } from "../utils/password.js";
+import { ROLES } from "../utils/constants.js";
 
 const seedAdmin = async () => {
   try {
@@ -20,12 +21,15 @@ const seedAdmin = async () => {
       username: process.env.ADMIN_USERNAME,
       email: process.env.ADMIN_EMAIL,
       password: hashedPassword,
-      role: process.env.ADMIN_ROLE,
+      role: ROLES.ADMIN,
     });
 
     console.log("Admin user created successfully");
   } catch (error) {
-    console.error("Error seeding admin:", error.message);
+    console.error(
+      "Error seeding admin:",
+      error.message
+    );
   }
 };
 
