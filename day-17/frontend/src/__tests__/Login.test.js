@@ -91,7 +91,7 @@ jest.mock("../hooks/useAuth", () => ({
 }));
 
 // 5. Import Login AFTER mocks
-import Login from "../../../../day-16/frontend/src/pages/Login";
+import Login from "../../../../day-17/frontend/src/pages/Login";
 import { message } from "antd";
 
 describe("Login Page - 100% Coverage Suite", () => {
