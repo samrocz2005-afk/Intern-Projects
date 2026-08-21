@@ -38,7 +38,8 @@ function App() {
       const res = await getStudents(
         currentPage,
         pageSize,
-        search
+        search,
+        filter
       );
 
       setStudents(res.data.data);
@@ -51,7 +52,23 @@ function App() {
 
   useEffect(() => {
     fetchStudents();
-  }, [currentPage, search]);
+  }, [currentPage, search, filter]);
+
+  // ==========================
+  // Search Change
+  // ==========================
+  const handleSearchChange = (value) => {
+    setSearch(value);
+    setCurrentPage(1);
+  };
+
+  // ==========================
+  // Department Filter Change
+  // ==========================
+  const handleFilterChange = (value) => {
+    setFilter(value);
+    setCurrentPage(1);
+  };
 
   // ==========================
   // Add / Update Student
@@ -120,14 +137,14 @@ function App() {
           <Col>
             <SearchBar
               search={search}
-              setSearch={setSearch}
+              setSearch={handleSearchChange}
             />
           </Col>
 
           <Col>
             <FilterBar
               filter={filter}
-              setFilter={setFilter}
+              setFilter={handleFilterChange}
             />
           </Col>
         </Row>

@@ -13,17 +13,20 @@ const api = axios.create({
 // STUDENT APIs
 // =======================
 
-// Get Students (Pagination + Search)
+// Get Students
+// Pagination + Search + Department Filter
 export const getStudents = (
   page = 1,
   limit = 5,
-  search = ""
+  search = "",
+  department = "All"
 ) =>
   api.get("/students", {
     params: {
       page,
       limit,
       search,
+      department,
     },
   });
 

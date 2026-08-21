@@ -2,13 +2,14 @@ const Student = require("../models/Student");
 
 // =========================
 // GET ALL STUDENTS
-// Pagination + Search + Populate
+// Pagination + Search + Department Filter
 // =========================
 const getStudents = async (req, res) => {
   try {
     const page = Number(req.query.page) || 1;
     const limit = Number(req.query.limit) || 5;
     const search = req.query.search || "";
+    const department = req.query.department || "All";
 
     const skip = (page - 1) * limit;
 
@@ -16,6 +17,7 @@ const getStudents = async (req, res) => {
       isDeleted: false,
     };
 
+    // Search
     if (search) {
       filter.$or = [
         {
@@ -31,6 +33,11 @@ const getStudents = async (req, res) => {
           },
         },
       ];
+    }
+
+    // Department filter
+    if (department !== "All") {
+      filter.department = department;
     }
 
     const totalStudents = await Student.countDocuments(filter);
@@ -56,7 +63,6 @@ const getStudents = async (req, res) => {
     });
   }
 };
-
 // =========================
 // GET STUDENT BY ID
 // =========================

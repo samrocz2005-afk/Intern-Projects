@@ -61,7 +61,7 @@ const studentSchema = new mongoose.Schema(
       },
 
       science: {
-        type: Numbe,
+        type: Number,
         required: [true, "Science marks are required"],
         min: 0,
         max: 100,
