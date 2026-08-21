@@ -1,0 +1,39 @@
+[33m21682b1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Delete Week-task directory
+[33mce5ec31[m feat: create movie and cinema app
+[33m6c9aed8[m test: add Jest test cases for login and books pages
+[33m73f2409[m feat(day-15): Complete JWT authentication, RBAC, protected APIs, and library management features
+[33m922a882[m test: add Jest test cases for login and books pages
+[33maec4951[m test: add Jest test cases for login and books pages
+[33m21f86c4[m Feat:changes auth and ux
+[33m6e84395[m Revert "Merge pull request #1 from samrocz2005-afk/feature-a"
+[33m8468de3[m Merge pull request #1 from samrocz2005-afk/feature-a
+[33m3601f52[m[33m ([m[1;31morigin/feature-a[m[33m, [m[1;32mfeature-a[m[33m)[m Merge practice
+[33m6fca6f1[m[33m ([m[1;35mrefs/stash[m[33m)[m WIP on main: 357e329 Complete JWT authentication, RBAC, protected APIs, and library management features
+[33m87cc89f[m index on main: 357e329 Complete JWT authentication, RBAC, protected APIs, and library management features
+[33m357e329[m Complete JWT authentication, RBAC, protected APIs, and library management features
+[33m40c9d7c[m feat: migrate student CRUD from db.json to MongoDB using Mongoose
+[33m9064c02[m Completed Day 13 MongoDB fundamentals with CRUD, queries, indexes, relationships, aggregation, and practice scenarios
+[33m13e6e25[m feat: build Student & Library Management app with Express CRUD and React frontend
+[33m61843a2[m feat: build full stack student management CRUD with Node.js and React
+[33m8795a7a[m feat: implement complete Kanban board application with Redux Toolkit, Zustand, Ant Design, routing, authentication, and JSON Server
+[33m9e3a037[m Remove weekend-task folder
+[33mfe3eaab[m feat: build weather forecast app with axios, react query and json server
+[33md58a088[m feat(day-9): add Redux Toolkit and Zustand implementations for student task manager
+[33ma9ee482[m Merge branch 'main' of https://github.com/samrocz2005-afk/Intern-Projects
+[33mb9f0d2e[m feat: complete task manager app with auth, routing, and CRUD
+[33meaf9651[m Add A Screen Shot
+[33m0363afa[m Add A Screen Shot
+[33m7d2bdfc[m Add A Screen Shot
+[33m42e7105[m Added A Screen Shot
+[33ma3079d5[m Output ScreenShot
+[33mf9aabd4[m Add a Git File
+[33m3f99cfe[m Built Movie Search App with OMDb API, featured movies, search, pagination, favorites, movie details modal, loading, and error handling using React Hooks.
+[33me44edc1[m feat: develop Student Management Dashboard using React fundamentals (CRA, JSX, Components, Props, State, and Event Handling)
+[33m03c1b0f[m Change Folder Name
+[33m6a38edc[m feature.: build post management CRUD with Fetch API, async/await, and local storage
+[33m8b180fd[m Add Screenshot of output
+[33mf47bbdb[m Completed Student Management System with CRUD, validation, search, filter, sort, and modals
+[33m3200590[m Fixed a mobile responsiveness
+[33m82cfb8a[m Day-1 Task Complete Blogr landing page
+[33mebc85e0[m Complete Day-1 Task Blogr landing page
+[33m244c26c[m Initial commit
