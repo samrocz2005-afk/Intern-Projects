@@ -1,20 +1,13 @@
 import React from "react";
 import { Breadcrumb } from "antd";
-import {
-  HomeOutlined,
-} from "@ant-design/icons";
-import {
-  Link,
-  useLocation,
-} from "react-router-dom";
+import { HomeOutlined } from "@ant-design/icons";
+import { Link, useLocation } from "react-router-dom";
 
 function Breadcrumbs() {
   const location = useLocation();
   const pathname = location.pathname;
 
-  const pathSegments = pathname
-    .split("/")
-    .filter(Boolean);
+  const pathSegments = pathname.split("/").filter(Boolean);
 
   const getLabel = (segment) => {
     const labels = {
@@ -36,9 +29,7 @@ function Breadcrumbs() {
       labels[segment] ||
       segment
         .replace(/-/g, " ")
-        .replace(/\b\w/g, (char) =>
-          char.toUpperCase()
-        )
+        .replace(/\b\w/g, (char) => char.toUpperCase())
     );
   };
 
@@ -58,16 +49,20 @@ function Breadcrumbs() {
     pathSegments.forEach((segment, index) => {
       currentPath += `/${segment}`;
 
-      const isLast =
-        index === pathSegments.length - 1;
+      const isLast = index === pathSegments.length - 1;
 
       items.push({
         title: isLast ? (
           <span>{getLabel(segment)}</span>
         ) : (
-          <Link to={currentPath}>
+          <span
+            style={{
+              color: "rgba(0, 0, 0, 0.45)",
+              cursor: "default",
+            }}
+          >
             {getLabel(segment)}
-          </Link>
+          </span>
         ),
       });
     });
@@ -76,11 +71,7 @@ function Breadcrumbs() {
   };
 
   return (
-    <div
-      style={{
-        marginBottom: 24,
-      }}
-    >
+    <div style={{ marginBottom: 24 }}>
       <Breadcrumb
         separator="/"
         items={getBreadcrumbItems()}

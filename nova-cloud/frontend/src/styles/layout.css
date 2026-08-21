@@ -1,0 +1,286 @@
+/* ==========================================================================
+   Application Layout
+   ========================================================================== */
+
+.app-layout {
+  min-height: 100vh;
+}
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.app-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  z-index: 1000;
+
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  transition:
+    width 0.2s ease,
+    transform 0.2s ease;
+}
+
+.app-sidebar-logo {
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+
+  border-bottom: 1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+.app-sidebar-logo-icon {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  flex-shrink: 0;
+}
+
+.app-sidebar-logo-text {
+  margin-left: 12px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.app-sidebar-menu {
+  border-inline-end: none !important;
+  margin-top: 12px;
+}
+
+/* ==========================================================================
+   Main Area
+   ========================================================================== */
+
+.app-main {
+  min-height: 100vh;
+
+  margin-left: 250px;
+
+  transition: margin-left 0.2s ease;
+}
+
+.app-main.collapsed {
+  margin-left: 80px;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.app-header {
+  position: sticky;
+  top: 0;
+
+  z-index: 900;
+
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.app-header-left {
+  display: flex;
+  align-items: center;
+
+  min-width: 0;
+}
+
+.app-header-right {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.app-header-trigger {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease;
+}
+
+.app-header-trigger:hover {
+  background: #f3f4f6;
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.app-content {
+  min-height: calc(100vh - 64px);
+
+  padding: 0;
+}
+
+/* ==========================================================================
+   Breadcrumb
+   ========================================================================== */
+
+.global-breadcrumb {
+  padding: 16px 24px 0;
+}
+
+.global-breadcrumb .ant-breadcrumb {
+  font-size: 14px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.app-footer {
+  padding: 20px 24px;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  background: transparent;
+}
+
+/* ==========================================================================
+   User Menu
+   ========================================================================== */
+
+.header-user {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+.header-user-info {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.2;
+}
+
+.header-user-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.header-user-role {
+  margin-top: 3px;
+
+  font-size: 12px;
+
+  color: #6b7280;
+}
+
+/* ==========================================================================
+   Mobile Overlay
+   ========================================================================== */
+
+.sidebar-overlay {
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 999;
+
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* ==========================================================================
+   Tablet
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .app-sidebar {
+    transform: translateX(-100%);
+  }
+
+  .app-sidebar.mobile-open {
+    transform: translateX(0);
+  }
+
+  .app-main,
+  .app-main.collapsed {
+    margin-left: 0;
+  }
+
+  .sidebar-overlay {
+    display: block;
+  }
+
+  .app-header {
+    padding: 0 16px;
+  }
+
+  .global-breadcrumb {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* ==========================================================================
+   Mobile
+   ========================================================================== */
+
+@media (max-width: 576px) {
+  .app-header {
+    height: 56px;
+  }
+
+  .app-content {
+    min-height: calc(100vh - 56px);
+  }
+
+  .header-user-info {
+    display: none;
+  }
+
+  .global-breadcrumb {
+    padding-top: 12px;
+  }
+
+  .app-footer {
+    padding: 16px;
+  }
+}
